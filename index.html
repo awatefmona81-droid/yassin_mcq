@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>Yassin MCQ</title>
+<style>
+body{
+    font-family: Arial;
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+.box{
+    background:#222;
+    padding:20px;
+    border-radius:15px;
+    max-width:500px;
+    margin:auto;
+}
+button{
+    display:block;
+    width:100%;
+    margin:10px 0;
+    padding:10px;
+    border:none;
+    border-radius:10px;
+    background:#0a84ff;
+    color:white;
+    font-size:18px;
+}
+</style>
+</head>
+<body>
+
+<div class="box">
+<h1>Yassin MCQ</h1>
+
+<h2>اكبر بلد في العالم؟</h2>
+
+<button onclick="check('روسيا')">روسيا</button>
+<button onclick="check('امريكا')">امريكا</button>
+<button onclick="check('الصين')">الصين</button>
+<button onclick="check('الجزائر')">الجزائر</button>
+
+<h3 id="result"></h3>
+</div>
+
+<script>
+function check(answer){
+    if(answer === "روسيا"){
+        document.getElementById("result").innerHTML = "✅ الإجابة الصحيحة هي روسيا";
+    }else{
+        document.getElementById("result").innerHTML = "❌ إجابة خاطئة";
+    }
+}
+</script>
+
+</body>
+</html>
